@@ -1,0 +1,61 @@
+/* Style de la page principale */
+body {
+  /*Définition de l'image de fond et de ses propriétés */
+  background-image: url("MacBook Pro 16_ - 1 (6).png");
+  background-size: cover;
+  background-position: center -40px;
+  background-repeat: no-repeat;
+}
+
+/* Style pour les tableaux et leurs éléments */
+table, th, td {
+  border: 5px solid black;
+  border-collapse: collapse;
+  margin-top: 200px;
+  margin-left: 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Style pour les liens */
+a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #634ECD;
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #634ECD;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens au survol de la souris */
+a:hover {
+    background-color: yellow;
+    color: green;
+}
+
+/* Style pour les écrans de petites tailles, tels que les téléphones */
+@media only screen and (max-width: 767px) {
+  table, th, td {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+/* Style pour les écrans de tailles moyennes, tels que les tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  table, th, td {
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+}
+
+/* Style pour les écrans de grandes tailles, tels que les ordinateurs */
+@media only screen and (min-width: 1024px) {
+  table, th, td {
+    margin-top: 200px;
+    margin-left: 5px;
+  }
+}

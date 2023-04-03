@@ -1,0 +1,47 @@
+/* Style par défaut */
+/* Définition du style de l'image de fond */
+body {
+  background-image: url("MacBook Pro 16_ - 1 (1).png"); /* Définition de l'image de fond */
+  background-color: black; /* Couleur de fond de l'image de fond */
+  max-width: 100%; /* Largeur maximale de la page */
+  max-height: 100%; /* Hauteur maximale de la page */
+  margin: auto; /* Centrer le contenu de la page */
+  display: flex; /* Utilisation d'un conteneur flexible */
+  justify-content: center; /* Centrer horizontalement le contenu */
+  align-items: center; /* Centrer verticalement le contenu */
+  background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
+  background-position: center 9%; /* Positionner l'image de fond */
+  background-size: cover; /* Ajuster la taille de l'image de fond pour couvrir la page */
+}
+/* Définition du style du titre */
+h1 {
+  font-size: 60px; /* Taille de police du titre */
+  color: #D31515; /* Couleur du texte */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Police du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+  position: absolute; /* Position absolue par rapport à la page */
+  top: 50%; /* Positionner le titre à 50% de la hauteur de la page */
+  left: 50%; /* Positionner le titre à 50% de la largeur de la page */
+  transform: translate(-50%, -50%); /* Centrer le titre par rapport à son propre contenu */
+}
+
+/* Style pour les petits écrans (par exemple, les téléphones) */
+@media only screen and (max-width: 767px) {
+  h1 {
+      font-size: 36px; /* Réduire la taille du texte */
+  }
+}
+
+/* Style pour les écrans de taille moyenne (par exemple, les tablettes) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+      font-size: 48px; /* Réduire la taille du texte */
+  }
+}
+
+/* Style pour les grands écrans (par exemple, les PC) */
+@media only screen and (min-width: 1024px) {
+  h1 {
+      font-size: 60px; /* Conserver la taille du texte */
+  }
+}

@@ -1,0 +1,85 @@
+/* Style de la page principale */
+body {
+    /*Définition de l'image de fond et de ses propriétés */
+    background-image: url("MacBook Pro 16_ - 1 (15).png"); /* Image de fond */
+    background-size: cover; /*Redimensionnement de l'image pour couvrir toute la pag*/
+    background-position: center -40px; /*Positionnement de l'image de fond par rapport à la page*/
+    background-repeat: no-repeat; /*Empêcher la répétition de l'image de fond*/
+  }
+  
+  /* Style pour les tableaux et leurs éléments */
+  table, th, td {
+    border: 5px solid black; /*Bordure de 5 pixels en noir*/
+    border-collapse: collapse; /*Fusionner les bordures adjacentes pour éviter les espaces vides entre les cellules*/
+    margin-top: 200px; /*Marge en haut de 200 pixels pour centrer le tableau verticalement*/
+    margin-left: 5px; /*Marge à gauche de 5 pixels pour centrer le tableau horizontalement*/
+    padding: 20px; /*Espace interne de 20 pixels pour le contenu de chaque cellule*/
+    text-align: left; /*Alignement du texte à gauche dans chaque cellule*/
+  }
+
+/* Style pour la classe de tableau .table-b */
+  .table-b {
+    display:inline-block; /*Afficher le tableau comme un élément en ligne pour le placer à côté d'autres éléments*/
+    border-collapse:collapse; /*Fusionner les bordures adjacentes pour éviter les espaces vides entre les cellules*/
+    vertical-align:top; /*Alignement vertical des cellules en haut*/
+    margin-left: 700px; /*Marge à gauche de 700 pixels pour placer le tableau à droite*/
+    margin-top: -500px; /*Marge négative de 500 pixels pour superposer le tableau sur l'image de fond*/
+    border: 2px; /*Bordure de 2 pixels*/
+}
+  
+  /* Style pour les liens */
+  a {
+      display: inline-block; /*Afficher le lien comme un élément en ligne pour le placer à côté d'autres éléments*/
+      padding: 10px; /*Espace interne de 10 pixels pour le texte du lien*/
+      background-color: #634ECD; /*Couleur de fond du lien*/
+      color: orange; /*Couleur du texte du lien*/
+      text-decoration: none; /*Supprimer le soulignement du texte du lien*/
+      font-weight: bold; /*Texte du lien en gras*/
+      border: 2px solid #634ECD; /*Bordure de 2 pixels en couleur de fond du lien*/
+      border-radius: 5px; /*Coins arrondis de la bordure*/
+      margin-bottom: 10px; /*Marge en bas de 10 pixels pour espacer les liens verticalement*/
+  }
+  
+  /* Style pour les liens au survol de la souris */
+  a:hover {
+      background-color: yellow; /*Couleur de fond du lien au survol de la souris*/
+      color: green; /*Couleur du texte du lien au survol de la souris*/
+  }
+  
+  /* Style pour les boutons */
+  button {
+    background-color: #634ECD; /*Couleur de fond du bouton*/
+    border-radius: 8px; /*Coins arrondis de la bordure*/
+    color: orange; /*Couleur du texte du bouton*/
+    font-size: large; /*Taille de police*/
+  }
+
+/* Style pour les boutons au survol de la souris */
+  button:hover {
+    background-color: yellow; /*Couleur de fond du lien au survol de la souris*/
+    color: green; /*Couleur du texte du lien au survol de la souris*/
+  }
+
+  /* Style pour les écrans de petites tailles, tels que les téléphones */
+  @media only screen and (max-width: 767px) {
+    table, th, td {
+      margin-top: 50px;
+      margin-left: 0;
+    }
+  }
+  
+  /* Style pour les écrans de tailles moyennes, tels que les tablettes */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    table, th, td {
+      margin-top: 150px;
+      margin-left: 50px;
+    }
+  }
+  
+  /* Style pour les écrans de grandes tailles, tels que les ordinateurs */
+  @media only screen and (min-width: 1024px) {
+    table, th, td {
+      margin-top: 200px;
+      margin-left: 5px;
+    }
+  }
